@@ -171,7 +171,7 @@ Verum ad istam omnem orationem brevis est defensio. Nam quoad aetas M. Caeli dar
                 'id' => 1,
                 'fullName' => 'Fabrice Haski',
                 'name' => 'Haski',
-                'fisrtName' => 'Fabrice',
+                'firstName' => 'Fabrice',
                 'email' => 'fhaski@mediapart.com',
                 'penName' => null,
                 'numberOfArticles' => 5
@@ -180,7 +180,7 @@ Verum ad istam omnem orationem brevis est defensio. Nam quoad aetas M. Caeli dar
                 'id' => 2,
                 'fullName' => 'Paul Auster',
                 'name' => 'Auster',
-                'fisrtName' => 'Paul',
+                'firstName' => 'Paul',
                 'email' => 'pauster@yahoo.com',
                 'penName' => null,
                 'numberOfArticles' => 3
@@ -190,7 +190,7 @@ Verum ad istam omnem orationem brevis est defensio. Nam quoad aetas M. Caeli dar
                 'id' => 3,
                 'fullName' => 'Emile Zola',
                 'name' => 'Zola',
-                'fisrtName' => 'Emile',
+                'firstName' => 'Emile',
                 'email' => 'jaccuse@yahoo.com',
                 'penName' => null,
                 'numberOfArticles' => 3
@@ -199,7 +199,7 @@ Verum ad istam omnem orationem brevis est defensio. Nam quoad aetas M. Caeli dar
                 'id' => 2,
                 'fullName' => 'Joseph Pulitzer',
                 'name' => 'Pulitzer',
-                'fisrtName' => 'Joseph',
+                'firstName' => 'Joseph',
                 'email' => 'jpulitzer@gmail.com',
                 'penName' => null,
                 'numberOfArticles' => 3
@@ -214,7 +214,7 @@ Verum ad istam omnem orationem brevis est defensio. Nam quoad aetas M. Caeli dar
         $author = array (
             'fullName' => 'Fabrice Haski',
             'name' => 'Haski',
-            'fisrtName' => 'Fabrice',
+            'firstName' => 'Fabrice',
             'email' => 'fhaski@mediapart.com',
             'penName' => null,
         );
@@ -249,18 +249,18 @@ Verum ad istam omnem orationem brevis est defensio. Nam quoad aetas M. Caeli dar
         $comments = array(
             array (
                 'author' => 'paul@yahoo.com',
-                'date' => new DateTime('-5 days'),
+                'createdAt' => new DateTime('-5 days'),
                 'text' => 'Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.'
             ),
             array (
                 'author' => 'alice@wanadoo.fr',
-                'date' => new DateTime('-16 days'),
+                'createdAt' => new DateTime('-16 days'),
                 'text' => 'Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.'
             ),
 
             array (
                 'author' => 'pierre@gnolu.com',
-                'date' => new DateTime('-20 days'),
+                'createdAt' => new DateTime('-20 days'),
                 'text' => 'Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.'
             )
         );
