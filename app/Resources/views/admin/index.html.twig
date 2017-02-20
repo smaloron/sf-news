@@ -1,0 +1,34 @@
+{% extends 'layouts/front-layout.html.twig' %}
+
+{% block content %}
+    <h1>Administration du blog</h1>
+
+    <h2>Liste des auteurs</h2>
+    <table class="table">
+        <tr>
+            <th>Auteur</th>
+            <th>nb article</th>
+        </tr>
+
+        <tr>
+            <td>Pierre haski</td>
+            <td>5</td>
+        </tr>
+
+        <tr>
+            <td>Paul Auster</td>
+            <td>3</td>
+        </tr>
+    </table>
+{% endblock %}
+
+{% block aside %}
+    <ul class="nav nav-pills nav-stacked">
+        <li>
+            <a href="{{ path('author_new') }}" class="btn btn-default">
+                <i class="glyphicon glyphicon-plus"></i>
+                Nouvel auteur
+            </a>
+        </li>
+    </ul>
+{% endblock %}
