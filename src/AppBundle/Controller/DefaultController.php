@@ -15,9 +15,12 @@ class DefaultController extends Controller
     public function indexAction()
     {
 
+        $dataProvider = $this->get('data_provider');
+        $articles = $dataProvider->getAllArticles();
+
         return $this->render(
             'default/index.html.twig',
-            array()
+            ['articles' => $articles]
         );
     }
 

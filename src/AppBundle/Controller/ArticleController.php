@@ -28,9 +28,21 @@ class ArticleController extends Controller
      * @Route("/{id}", name="article_details")
      * @return Response
      */
-    public function detailsAction()
+    public function detailsAction($id)
     {
-        return $this->render('article/details.html.twig');
+        $dataprovider = $this->get('data_provider');
+        $articles = $dataprovider->getAllArticles();
+        $article = null;
+
+        foreach ($articles as $item){
+            if($item['id'] == $id){
+                $article = $item;
+            }
+        }
+
+        return $this->render('article/details.html.twig',
+            ['article' => $article]
+        );
     }
 
     /**
